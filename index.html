@@ -3,68 +3,121 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Scooter's Coffee & Diner | Amazing Brews & Classics</title>
+    <title>Scooter's Coffee & Diner | Artisan Roasts & Comfort Classics</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 </head>
 <body>
 
-    <!-- Navigation Bar -->
+    <!-- Elite Navigation Bar -->
     <nav class="navbar">
-        <div class="logo"><i class="fa-solid fa-mug-hot"></i> Scooter's</div>
-        <ul class="nav-links">
-            <li><a href="#home">Home</a></li>
+        <div class="nav-brand">
+            <i class="fa-solid fa-mug-saucer"></i>
+            <span>Scooter's Coffee</span>
+        </div>
+        <ul class="nav-menu">
+            <li><a href="#hero">Home</a></li>
             <li><a href="#menu">Menu</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#contact" class="nav-btn">Contact</a></li>
+            <li><a href="#about">Our Story</a></li>
+            <li><a href="#location">Hours & Location</a></li>
         </ul>
+        <div class="nav-action">
+            <button class="order-online-nav" id="topOrderBtn"><i class="fa-solid fa-bag-shopping"></i> Order Ahead</button>
+        </div>
     </nav>
 
-    <!-- Hero Section -->
-    <header id="home" class="hero">
-        <div class="hero-content">
-            <h1>Fuel Your Day, Your Way</h1>
-            <p>Handcrafted artisan espresso, fresh-baked morning pastries, and classic diner comfort food made fresh daily.</p>
-            <a href="#menu" class="cta-btn">Explore Menu</a>
+    <!-- Cinematic Hero Section -->
+    <header id="hero" class="hero-cinematic">
+        <div class="hero-overlay"></div>
+        <div class="hero-container">
+            <span class="badge"><i class="fa-solid fa-fire"></i> Voted Best Local Diner & Coffee Bar</span>
+            <h1>Awaken Your Everyday Routine</h1>
+            <p>From signature velvety caramel espresso to scratch-baked morning pastries and heavy-skillet diner breakfasts, crafted to perfection.</p>
+            <div class="hero-buttons">
+                <a href="#menu" class="btn-primary">View Full Menu</a>
+                <a href="#location" class="btn-secondary"><i class="fa-solid fa-location-dot"></i> Find Location</a>
+            </div>
         </div>
     </header>
 
-    <!-- Menu Section -->
-    <section id="menu" class="menu-section">
-        <div class="section-title">
-            <h2>Our Signature Menu</h2>
-            <p>Freshly brewed, locally loved.</p>
+    <!-- Interactive Menu Section -->
+    <section id="menu" class="menu-showcase">
+        <div class="section-heading">
+            <h2>The Signature Collection</h2>
+            <p>Hand-selected ingredients, bold flavors, and made fresh to order.</p>
         </div>
-        
+
         <div class="menu-grid">
-            <div class="menu-card">
-                <div class="card-icon"><i class="fa-solid fa-coffee"></i></div>
-                <h3>Caramelicious Latte</h3>
-                <p>Signature caramel espresso blended to velvety perfection.</p>
-                <span class="price">$5.49</span>
+            <!-- Item 1 -->
+            <div class="menu-item-card">
+                <div class="card-badge">Bestseller</div>
+                <div class="item-icon-wrapper"><i class="fa-solid fa-mug-hot"></i></div>
+                <div class="item-details">
+                    <div class="item-title-price">
+                        <h3>Caramelicious Latte</h3>
+                        <span class="price">$5.49</span>
+                    </div>
+                    <p>Rich espresso blended with signature velvety caramel, steamed milk, and whipped cream.</p>
+                </div>
             </div>
-            <div class="menu-card">
-                <div class="card-icon"><i class="fa-solid fa-bread-slice"></i></div>
-                <h3>Cinnamon Roll</h3>
-                <p>Warm, gooey, scratch-made pastry topped with cream cheese icing.</p>
-                <span class="price">$3.99</span>
+
+            <!-- Item 2 -->
+            <div class="menu-item-card">
+                <div class="card-badge">Fresh Baked</div>
+                <div class="item-icon-wrapper"><i class="fa-solid fa- croissant"></i><i class="fa-solid fa-bread-slice"></i></div>
+                <div class="item-details">
+                    <div class="item-title-price">
+                        <h3>Giant Cinnamon Roll</h3>
+                        <span class="price">$3.99</span>
+                    </div>
+                    <p>Warm, gooey scratch-made pastry topped with rich cream cheese frosting.</p>
+                </div>
             </div>
-            <div class="menu-card">
-                <div class="card-icon"><i class="fa-solid fa-burger"></i></div>
-                <h3>Diner Breakfast Sandwich</h3>
-                <p>Double-smoked bacon, cage-free egg, and melted cheddar on a brioche bun.</p>
-                <span class="price">$4.89</span>
+
+            <!-- Item 3 -->
+            <div class="menu-item-card">
+                <div class="card-badge">Chef's Choice</div>
+                <div class="item-icon-wrapper"><i class="fa-solid fa-burger"></i></div>
+                <div class="item-details">
+                    <div class="item-title-price">
+                        <h3>Diner Breakfast Sandwich</h3>
+                        <span class="price">$4.89</span>
+                    </div>
+                    <p>Double-smoked bacon, cage-free fried egg, and melted sharp cheddar on a toasted brioche bun.</p>
+                </div>
             </div>
         </div>
 
-        <div class="order-container">
-            <button id="orderBtn"><i class="fa-solid fa-cart-shopping"></i> Place Mobile Order</button>
+        <div class="central-cta-box">
+            <button id="mainOrderBtn"><i class="fa-solid fa-cart-shopping"></i> Launch Mobile Ordering Terminal</button>
         </div>
     </section>
 
-    <!-- Footer -->
+    <!-- Info & Hours Grid -->
+    <section id="location" class="info-section">
+        <div class="info-grid">
+            <div class="info-card">
+                <i class="fa-solid fa-clock"></i>
+                <h3>Store Hours</h3>
+                <p>Monday – Friday: 5:30 AM – 8:00 PM</p>
+                <p>Saturday – Sunday: 6:00 AM – 9:00 PM</p>
+            </div>
+            <div class="info-card">
+                <i class="fa-solid fa-map-location-dot"></i>
+                <h3>Location</h3>
+                <p>104 Artisan Avenue</p>
+                <p>Neighborhood District, NY</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Professional Footer -->
     <footer>
-        <p>&copy; 2026 Scooter's Coffee & Diner. All rights reserved. Built for professional deployment.</p>
+        <div class="footer-content">
+            <p>&copy; 2026 Scooter's Coffee & Diner. All rights reserved.</p>
+            <p class="designer-tag">Designed for Elite Commercial Deployment</p>
+        </div>
     </footer>
 
     <script src="script.js"></script>
