@@ -1,5 +1,9 @@
-const orderButton = document.getElementById("orderBtn");
+const orderTriggers = [document.getElementById("topOrderBtn"), document.getElementById("mainOrderBtn")];
 
-orderButton.addEventListener("click", function() {
-    alert("☕ Success! Your order has been securely transmitted to the Scooter's Coffee kitchen queue.");
+orderTriggers.forEach(btn => {
+    if(btn) {
+        btn.addEventListener("click", function() {
+            alert("☕ Terminal Active: Connecting securely to Scooter's Kitchen Order Queue system...");
+        });
+    }
 });
