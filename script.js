@@ -1,5 +1,5 @@
 const orderButton = document.getElementById("orderBtn");
 
 orderButton.addEventListener("click", function() {
-    alert("Thanks for choosing Scooter's Coffee! Your order has been placed.");
+    alert("☕ Success! Your order has been securely transmitted to the Scooter's Coffee kitchen queue.");
 });
