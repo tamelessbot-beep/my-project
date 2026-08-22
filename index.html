@@ -1,21 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scooter's Coffee & Diner | Amazing Brews & Classics</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
 <body>
 
-    <header>
-        <h1>Scooter's Coffee</h1>
-        <p>Your neighborhood spot for amazing brews and diner classics.</p>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="logo"><i class="fa-solid fa-mug-hot"></i> Scooter's</div>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#menu">Menu</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact" class="nav-btn">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <header id="home" class="hero">
+        <div class="hero-content">
+            <h1>Fuel Your Day, Your Way</h1>
+            <p>Handcrafted artisan espresso, fresh-baked morning pastries, and classic diner comfort food made fresh daily.</p>
+            <a href="#menu" class="cta-btn">Explore Menu</a>
+        </div>
     </header>
 
-    <section class="menu">
-        <h2>Customer Favorites</h2>
-        <ul>
-            <li><span>Signature Caramelicious Latte</span> <span class="price">$5.49</span></li>
-            <li><span>Fresh Baked Cinnamon Rolls</span> <span class="price">$3.99</span></li>
-            <li><span>Warm Breakfast Sandwiches</span> <span class="price">$4.89</span></li>
-        </ul>
+    <!-- Menu Section -->
+    <section id="menu" class="menu-section">
+        <div class="section-title">
+            <h2>Our Signature Menu</h2>
+            <p>Freshly brewed, locally loved.</p>
+        </div>
+        
+        <div class="menu-grid">
+            <div class="menu-card">
+                <div class="card-icon"><i class="fa-solid fa-coffee"></i></div>
+                <h3>Caramelicious Latte</h3>
+                <p>Signature caramel espresso blended to velvety perfection.</p>
+                <span class="price">$5.49</span>
+            </div>
+            <div class="menu-card">
+                <div class="card-icon"><i class="fa-solid fa-bread-slice"></i></div>
+                <h3>Cinnamon Roll</h3>
+                <p>Warm, gooey, scratch-made pastry topped with cream cheese icing.</p>
+                <span class="price">$3.99</span>
+            </div>
+            <div class="menu-card">
+                <div class="card-icon"><i class="fa-solid fa-burger"></i></div>
+                <h3>Diner Breakfast Sandwich</h3>
+                <p>Double-smoked bacon, cage-free egg, and melted cheddar on a brioche bun.</p>
+                <span class="price">$4.89</span>
+            </div>
+        </div>
+
         <div class="order-container">
-            <button id="orderBtn">Order Now</button>
+            <button id="orderBtn"><i class="fa-solid fa-cart-shopping"></i> Place Mobile Order</button>
         </div>
     </section>
 
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 Scooter's Coffee & Diner. All rights reserved. Built for professional deployment.</p>
+    </footer>
+
     <script src="script.js"></script>
 </body>
+</html>
